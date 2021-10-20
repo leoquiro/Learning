@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cronômetro</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cronômetro</h1>
+
+      <div id="tempo">00:00:00</div>
+
+      <div class="buttons">
+        <button id="startButton" onclick="start()">COMEÇAR</button>
+        <button id="pauseButton" onclick="pause()">PAUSAR</button>
+        <button id="resetButton" onclick="reset()">RESET</button>
+      </div>
+    </div>
+
+    <script src="crono.js"></script>
+  </body>
+</html>
+
+<style>
+  body {
+  background:black;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-family: sans-serif;
+}
+
+#tempo {
+  font-size: 450px;
+  font-family: sans-serif ;
+  margin-top: -20px;
+}
+
+.buttons {
+  margin: 10px 0;
+}
+
+button {
+  padding: 32px 60px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 32px;
+}
+button:hover {
+  filter: grayscale(0.5);
+}
+button:focus {
+  outline: none;
+}
+
+#startButton {
+  background: green;
+}
+#pauseButton {
+  background: blue;
+  display: none;
+}
+#resetButton {
+  background: red;
+  display: none;
+}
+
+</style>
